@@ -11,11 +11,9 @@ class ProductsPage extends Page {
 
     get shopingCart(){return cy.get('#shopping_cart_container')}
 
-
     open() {
         return super.open('/inventory.html')
     }
-
 
 }
 export default new ProductsPage()

@@ -13,6 +13,8 @@ describe('Authentication', () => {
     cy.logIn( Cypress.env('username'),  Cypress.env('password') )
     ProductsPage.path.should('include', 'inventory')
     ProductsPage.shopingCart.should('be.visible')
+
+
   })
 
   it('With non-existing credentials', () => {

@@ -1,4 +1,5 @@
 class Menubar {
+
     get allItems() {return cy.get('#inventory_sidebar_link')}
     get about() {return cy.get('#about_sidebar_link')}
     get logOut() {return cy.get('#logout_sidebar_link')}

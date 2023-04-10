@@ -2,6 +2,8 @@ import user from '../fixtures/user.json'
 import { CartPage} from '../pages'
 import AuthPage from "../pages/auth.page";
 import ProductsPage from "../pages/products.page";
+import Navbar from "../elements/navbar";
+import Menubar from "../elements/menubar";
 
 describe('Items', () => {
     beforeEach('login',() => {
@@ -26,7 +28,7 @@ describe('Items', () => {
             .and('have.attr','aria-hidden','true')
 
     })
-    it.only('Navigate to sort container',()=>{
+    it('Navigate to sort container',()=>{
 
         ProductsPage.filter.sort
 
@@ -36,7 +38,8 @@ describe('Items', () => {
 
     })
 
-    afterEach('logout',()=>{
-        cy.logOut()
+    afterEach('Logout',()=>{
+        Navbar.menu.click()
+        Menubar.logOut.click()
     })
 })

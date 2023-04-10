@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "1": "npx cypress open",
     "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "1": "npx cypress open"
+    "cy:run": "cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/register": "^7.21.0",
+    "prettier": "^2.8.7"
+  },
   "devDependencies": {
     "cypress": "^12.3.0"
   }
